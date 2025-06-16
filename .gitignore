@@ -1,0 +1,58 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Data directories
+outputs/
+data/cache/
+# Include rfp-data but exclude some subdirectories
+rfp-data/vector_store_temp/
+
+
+# Logs
+*.log
+logs/
+
+# IDE specific files
+.idea/
+# VSCode files are included for sharing development settings
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Large files and binary files
+*.faiss
+*.pkl
+*.bin
+*.h5
+
+# Temporary files
+*.bak
+*.swp
+*.tmp
+.~*
+
+# Local configuration
+.python-version 
