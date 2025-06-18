@@ -1,0 +1,314 @@
+2025-06-18 20:34:13,058 - __main__ - INFO - Using source directory: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses
+2025-06-18 20:34:13,058 - __main__ - INFO - Using output directory: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data
+2025-06-18 20:34:13,059 - __main__ - INFO - Found 5 files in source directory
+2025-06-18 20:34:13,059 - __main__ - INFO - Initializing custom Azure embeddings
+2025-06-18 20:34:13,077 - __main__ - INFO - Initialized CustomEmbeddings with model: models/embedding-001
+2025-06-18 20:34:13,077 - __main__ - INFO - Initialized KnowledgeEmbedder with source_dir=/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses, output_dir=/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data
+2025-06-18 20:34:13,077 - __main__ - INFO - Loaded 5 previously processed files from checkpoint
+2025-06-18 20:34:13,080 - __main__ - INFO - Found 5 files in /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses
+2025-06-18 20:34:13,080 - __main__ - INFO - 5 files have already been processed
+2025-06-18 20:34:13,080 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce Hubspot - Deepseek (2).pdf
+2025-06-18 20:34:13,080 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Internet + Resources.pdf
+2025-06-18 20:34:13,080 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce and HubSpot Integration (1) (1).pdf
+2025-06-18 20:34:13,080 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce Hubspot - Gemini (1).pdf
+2025-06-18 20:34:13,080 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce & Hubspot - Copilot (2).pdf
+2025-06-18 20:34:13,083 - __main__ - INFO - Loaded 155 existing chunks from checkpoint
+2025-06-18 20:34:13,083 - __main__ - INFO - No new documents to split
+2025-06-18 20:34:13,083 - __main__ - INFO - Creating embeddings for batch 1/8 (20 chunks)
+2025-06-18 20:34:13,083 - __main__ - INFO - Generating embeddings for 20 documents
+2025-06-18 20:34:13,676 - openai._base_client - INFO - Retrying request to /embeddings in 0.440357 seconds
+2025-06-18 20:34:14,223 - openai._base_client - INFO - Retrying request to /embeddings in 0.882164 seconds
+2025-06-18 20:34:15,340 - openai._base_client - INFO - Retrying request to /embeddings in 0.472612 seconds
+2025-06-18 20:34:15,925 - openai._base_client - INFO - Retrying request to /embeddings in 0.751586 seconds
+2025-06-18 20:34:16,894 - openai._base_client - INFO - Retrying request to /embeddings in 0.421314 seconds
+2025-06-18 20:34:17,434 - openai._base_client - INFO - Retrying request to /embeddings in 0.865592 seconds
+2025-06-18 20:43:21,612 - __main__ - INFO - Using source directory: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses
+2025-06-18 20:43:21,612 - __main__ - INFO - Using output directory: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data
+2025-06-18 20:43:21,613 - __main__ - INFO - Found 5 files in source directory
+2025-06-18 20:43:21,613 - __main__ - INFO - Initializing custom Azure embeddings
+2025-06-18 20:43:21,613 - __main__ - INFO - Initialized CustomEmbeddings with model: models/embedding-001
+2025-06-18 20:43:21,614 - __main__ - INFO - Initialized KnowledgeEmbedder with source_dir=/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses, output_dir=/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data
+2025-06-18 20:43:21,614 - __main__ - INFO - Loaded 5 previously processed files from checkpoint
+2025-06-18 20:43:21,615 - __main__ - INFO - Found 5 files in /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses
+2025-06-18 20:43:21,615 - __main__ - INFO - 5 files have already been processed
+2025-06-18 20:43:21,615 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce Hubspot - Deepseek (2).pdf
+2025-06-18 20:43:21,615 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Internet + Resources.pdf
+2025-06-18 20:43:21,615 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce and HubSpot Integration (1) (1).pdf
+2025-06-18 20:43:21,615 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce Hubspot - Gemini (1).pdf
+2025-06-18 20:43:21,615 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce & Hubspot - Copilot (2).pdf
+2025-06-18 20:43:21,617 - __main__ - INFO - Loaded 155 existing chunks from checkpoint
+2025-06-18 20:43:21,617 - __main__ - INFO - No new documents to split
+2025-06-18 20:43:21,617 - __main__ - INFO - Creating embeddings for batch 1/8 (20 chunks)
+2025-06-18 20:43:21,617 - __main__ - INFO - Initializing Gemini client
+2025-06-18 20:43:21,617 - __main__ - INFO - API key being used: [EMPTY]
+2025-06-18 20:43:21,617 - __main__ - INFO - Base URL: https://generativelanguage.googleapis.com/v1beta/
+2025-06-18 20:43:21,617 - __main__ - INFO - Model: models/embedding-001
+2025-06-18 20:43:21,634 - __main__ - INFO - Gemini client initialized successfully
+2025-06-18 20:43:21,634 - __main__ - INFO - Generating embeddings for 20 documents
+2025-06-18 20:43:22,247 - openai._base_client - INFO - Retrying request to /embeddings in 0.479644 seconds
+2025-06-18 20:43:22,843 - openai._base_client - INFO - Retrying request to /embeddings in 0.754065 seconds
+2025-06-18 20:43:23,857 - openai._base_client - INFO - Retrying request to /embeddings in 0.433551 seconds
+2025-06-18 20:43:24,426 - openai._base_client - INFO - Retrying request to /embeddings in 0.853599 seconds
+2025-06-18 20:47:41,196 - __main__ - INFO - Using source directory: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses
+2025-06-18 20:47:41,197 - __main__ - INFO - Using output directory: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data
+2025-06-18 20:47:41,198 - __main__ - INFO - Found 5 files in source directory
+2025-06-18 20:47:41,199 - __main__ - INFO - Initializing custom Azure embeddings
+2025-06-18 20:47:41,199 - __main__ - INFO - Initialized CustomEmbeddings with model: models/embedding-001
+2025-06-18 20:47:41,199 - __main__ - INFO - Initialized KnowledgeEmbedder with source_dir=/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses, output_dir=/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data
+2025-06-18 20:47:41,199 - __main__ - INFO - Loaded 5 previously processed files from checkpoint
+2025-06-18 20:47:41,200 - __main__ - INFO - Found 5 files in /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses
+2025-06-18 20:47:41,200 - __main__ - INFO - 5 files have already been processed
+2025-06-18 20:47:41,200 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce Hubspot - Deepseek (2).pdf
+2025-06-18 20:47:41,200 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Internet + Resources.pdf
+2025-06-18 20:47:41,200 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce and HubSpot Integration (1) (1).pdf
+2025-06-18 20:47:41,200 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce Hubspot - Gemini (1).pdf
+2025-06-18 20:47:41,200 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce & Hubspot - Copilot (2).pdf
+2025-06-18 20:47:41,203 - __main__ - INFO - Loaded 155 existing chunks from checkpoint
+2025-06-18 20:47:41,203 - __main__ - INFO - No new documents to split
+2025-06-18 20:47:41,203 - __main__ - INFO - Creating embeddings for batch 1/8 (20 chunks)
+2025-06-18 20:47:41,203 - __main__ - INFO - Initializing Gemini client
+2025-06-18 20:47:41,203 - __main__ - INFO - API key loaded directly from env: [EMPTY]
+2025-06-18 20:47:41,203 - __main__ - WARNING - Attempt 1 to create embeddings failed: name 'OpenAI' is not defined. Retrying in 5 seconds...
+2025-06-18 20:47:46,208 - __main__ - INFO - Initializing Gemini client
+2025-06-18 20:47:46,209 - __main__ - INFO - API key loaded directly from env: [EMPTY]
+2025-06-18 20:47:46,209 - __main__ - WARNING - Attempt 2 to create embeddings failed: name 'OpenAI' is not defined. Retrying in 5 seconds...
+2025-06-18 20:51:34,330 - __main__ - INFO - Using source directory: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses
+2025-06-18 20:51:34,330 - __main__ - INFO - Using output directory: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data
+2025-06-18 20:51:34,331 - __main__ - INFO - Found 5 files in source directory
+2025-06-18 20:51:34,331 - __main__ - INFO - Initializing custom Azure embeddings
+2025-06-18 20:51:34,331 - __main__ - INFO - Initialized CustomEmbeddings with model: models/embedding-001
+2025-06-18 20:51:34,331 - __main__ - INFO - Initialized KnowledgeEmbedder with source_dir=/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses, output_dir=/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data
+2025-06-18 20:51:34,331 - __main__ - INFO - Loaded 5 previously processed files from checkpoint
+2025-06-18 20:51:34,332 - __main__ - INFO - Found 5 files in /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses
+2025-06-18 20:51:34,332 - __main__ - INFO - 5 files have already been processed
+2025-06-18 20:51:34,332 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce Hubspot - Deepseek (2).pdf
+2025-06-18 20:51:34,332 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Internet + Resources.pdf
+2025-06-18 20:51:34,332 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce and HubSpot Integration (1) (1).pdf
+2025-06-18 20:51:34,332 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce Hubspot - Gemini (1).pdf
+2025-06-18 20:51:34,332 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce & Hubspot - Copilot (2).pdf
+2025-06-18 20:51:34,334 - __main__ - INFO - Loaded 155 existing chunks from checkpoint
+2025-06-18 20:51:34,335 - __main__ - INFO - No new documents to split
+2025-06-18 20:51:34,335 - __main__ - INFO - Creating embeddings for batch 1/8 (20 chunks)
+2025-06-18 20:51:34,335 - __main__ - INFO - Initializing Gemini client
+2025-06-18 20:51:34,335 - __main__ - INFO - API key loaded directly from env: AIzaS...fYM
+2025-06-18 20:51:34,335 - __main__ - WARNING - Attempt 1 to create embeddings failed: name 'OpenAI' is not defined. Retrying in 5 seconds...
+2025-06-18 20:52:16,927 - __main__ - INFO - Using source directory: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses
+2025-06-18 20:52:16,927 - __main__ - INFO - Using output directory: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data
+2025-06-18 20:52:16,928 - __main__ - INFO - Found 5 files in source directory
+2025-06-18 20:52:16,929 - __main__ - INFO - Initializing custom Azure embeddings
+2025-06-18 20:52:16,929 - __main__ - INFO - Initialized CustomEmbeddings with model: models/embedding-001
+2025-06-18 20:52:16,929 - __main__ - INFO - Initialized KnowledgeEmbedder with source_dir=/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses, output_dir=/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data
+2025-06-18 20:52:16,929 - __main__ - INFO - Loaded 5 previously processed files from checkpoint
+2025-06-18 20:52:16,930 - __main__ - INFO - Found 5 files in /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses
+2025-06-18 20:52:16,930 - __main__ - INFO - 5 files have already been processed
+2025-06-18 20:52:16,930 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce Hubspot - Deepseek (2).pdf
+2025-06-18 20:52:16,930 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Internet + Resources.pdf
+2025-06-18 20:52:16,930 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce and HubSpot Integration (1) (1).pdf
+2025-06-18 20:52:16,930 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce Hubspot - Gemini (1).pdf
+2025-06-18 20:52:16,930 - __main__ - INFO - Skipping already processed file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses/Salesforce & Hubspot - Copilot (2).pdf
+2025-06-18 20:52:16,933 - __main__ - INFO - Loaded 155 existing chunks from checkpoint
+2025-06-18 20:52:16,933 - __main__ - INFO - No new documents to split
+2025-06-18 20:52:16,933 - __main__ - INFO - Creating embeddings for batch 1/8 (20 chunks)
+2025-06-18 20:52:16,933 - __main__ - INFO - Initializing Gemini client
+2025-06-18 20:52:16,933 - __main__ - INFO - API key loaded directly from env: AIzaS...fYM
+2025-06-18 20:52:16,950 - __main__ - INFO - Gemini client initialized successfully
+2025-06-18 20:52:16,950 - __main__ - INFO - Generating embeddings for 20 documents
+2025-06-18 20:52:19,091 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:19,508 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:20,664 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:21,114 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:22,208 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:22,698 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:23,854 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:24,297 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:25,427 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:26,007 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:26,009 - __main__ - INFO - Processed 10/20 embeddings
+2025-06-18 20:52:27,030 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:27,643 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:28,669 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:29,160 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:30,308 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:30,820 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:31,854 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:32,380 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:33,404 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:33,997 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:34,000 - __main__ - INFO - Successfully generated 20 embeddings
+2025-06-18 20:52:34,325 - faiss.loader - INFO - Loading faiss.
+2025-06-18 20:52:34,394 - faiss.loader - INFO - Successfully loaded faiss.
+2025-06-18 20:52:36,077 - __main__ - INFO - Creating embeddings for batch 2/8 (20 chunks)
+2025-06-18 20:52:36,077 - __main__ - INFO - Gemini client initialized successfully
+2025-06-18 20:52:36,077 - __main__ - INFO - Generating embeddings for 20 documents
+2025-06-18 20:52:36,493 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:37,611 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:38,055 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:39,146 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:39,726 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:40,753 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:41,301 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:42,390 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:42,902 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:44,128 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:44,135 - __main__ - INFO - Processed 10/20 embeddings
+2025-06-18 20:52:44,564 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:45,688 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:46,128 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:47,265 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:47,713 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:48,841 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:49,248 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:50,379 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:50,789 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:51,891 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:51,900 - __main__ - INFO - Successfully generated 20 embeddings
+2025-06-18 20:52:51,908 - __main__ - INFO - Creating embeddings for batch 3/8 (20 chunks)
+2025-06-18 20:52:51,908 - __main__ - INFO - Gemini client initialized successfully
+2025-06-18 20:52:51,908 - __main__ - INFO - Generating embeddings for 20 documents
+2025-06-18 20:52:52,424 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:53,560 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:54,232 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:55,188 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:55,907 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:56,727 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:57,545 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:58,297 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:59,102 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:59,863 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:52:59,871 - __main__ - INFO - Processed 10/20 embeddings
+2025-06-18 20:53:00,667 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:01,463 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:02,234 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:03,077 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:03,894 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:04,714 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:05,533 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:06,351 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:07,899 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:08,298 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:08,307 - __main__ - INFO - Successfully generated 20 embeddings
+2025-06-18 20:53:08,313 - __main__ - INFO - Creating embeddings for batch 4/8 (20 chunks)
+2025-06-18 20:53:08,313 - __main__ - INFO - Gemini client initialized successfully
+2025-06-18 20:53:08,313 - __main__ - INFO - Generating embeddings for 20 documents
+2025-06-18 20:53:09,527 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:10,038 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:11,070 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:11,590 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:12,701 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:13,164 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:14,253 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:14,683 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:15,814 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:16,264 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:16,273 - __main__ - INFO - Processed 10/20 embeddings
+2025-06-18 20:53:17,404 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:17,845 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:19,152 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:19,664 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:20,666 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:21,200 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:22,211 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:22,802 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:23,760 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:24,387 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:24,395 - __main__ - INFO - Successfully generated 20 embeddings
+2025-06-18 20:53:24,401 - __main__ - INFO - Creating embeddings for batch 5/8 (20 chunks)
+2025-06-18 20:53:24,402 - __main__ - INFO - Gemini client initialized successfully
+2025-06-18 20:53:24,402 - __main__ - INFO - Generating embeddings for 20 documents
+2025-06-18 20:53:25,300 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:25,957 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:26,856 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:27,534 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:28,468 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:29,107 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:30,026 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:30,688 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:31,568 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:32,248 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:32,255 - __main__ - INFO - Processed 10/20 embeddings
+2025-06-18 20:53:33,114 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:33,822 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:34,821 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:35,434 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:36,338 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:37,073 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:37,942 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:38,713 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:39,632 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:40,065 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:40,073 - __main__ - INFO - Successfully generated 20 embeddings
+2025-06-18 20:53:40,079 - __main__ - INFO - Creating embeddings for batch 6/8 (20 chunks)
+2025-06-18 20:53:40,080 - __main__ - INFO - Gemini client initialized successfully
+2025-06-18 20:53:40,080 - __main__ - INFO - Generating embeddings for 20 documents
+2025-06-18 20:53:40,501 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:40,954 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:41,461 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:41,889 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:42,500 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:43,109 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:43,906 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:44,331 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:44,768 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:45,200 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:45,208 - __main__ - INFO - Processed 10/20 embeddings
+2025-06-18 20:53:45,619 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:46,066 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:46,502 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:46,969 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:47,403 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:47,852 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:48,335 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:48,849 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:49,359 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:49,872 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:49,875 - __main__ - INFO - Successfully generated 20 embeddings
+2025-06-18 20:53:49,878 - __main__ - INFO - Creating embeddings for batch 7/8 (20 chunks)
+2025-06-18 20:53:49,878 - __main__ - INFO - Gemini client initialized successfully
+2025-06-18 20:53:49,878 - __main__ - INFO - Generating embeddings for 20 documents
+2025-06-18 20:53:50,385 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:50,824 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:51,264 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:51,707 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:52,150 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:52,591 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:53,017 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:53,463 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:53,891 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:54,339 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:54,348 - __main__ - INFO - Processed 10/20 embeddings
+2025-06-18 20:53:54,784 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:55,324 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:55,760 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:56,198 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:56,631 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:57,141 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:57,682 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:58,118 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:58,533 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:58,969 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:58,977 - __main__ - INFO - Successfully generated 20 embeddings
+2025-06-18 20:53:58,984 - __main__ - INFO - Creating embeddings for batch 8/8 (15 chunks)
+2025-06-18 20:53:58,984 - __main__ - INFO - Gemini client initialized successfully
+2025-06-18 20:53:58,984 - __main__ - INFO - Generating embeddings for 15 documents
+2025-06-18 20:53:59,418 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:53:59,868 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:00,317 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:00,759 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:01,197 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:01,637 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:02,159 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:02,673 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:03,141 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:03,595 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:03,603 - __main__ - INFO - Processed 10/15 embeddings
+2025-06-18 20:54:04,018 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:04,541 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:05,028 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:05,539 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:06,050 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/embeddings "HTTP/1.1 200 OK"
+2025-06-18 20:54:06,053 - __main__ - INFO - Successfully generated 15 embeddings
+2025-06-18 20:54:06,060 - __main__ - INFO - Saved vector store to /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data/vector_store
+2025-06-18 20:54:06,061 - __main__ - WARNING - Error cleaning up temporary files: [Errno 2] No such file or directory: '/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data/vector_store_temp/docstore.pkl'
+2025-06-18 20:54:06,061 - __main__ - INFO - Successfully embedded documents from /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses to /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data/vector_store
+2025-06-18 20:54:06,061 - __main__ - INFO - Vector store is located at: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data/vector_store
+2025-06-18 20:54:06,061 - __main__ - INFO - Index file: /Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data/vector_store/index.faiss
