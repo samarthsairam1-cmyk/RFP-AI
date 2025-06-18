@@ -204,7 +204,6 @@ async def chat(request: ChatRequest):
             
         # Generate a response to the chat query
         response = await response_service.generate_chat_response(request.message)
-        
         return response
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

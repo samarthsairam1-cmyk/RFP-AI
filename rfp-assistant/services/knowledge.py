@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 
 # Add parent directory to path to import from semantic_similarity
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-from semantic_similarity import get_openai_client, get_embedding, OpenAISettings
+from semantic_similarity import get_client, get_embedding, GeminiSettings
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -25,36 +25,36 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 # Initialize OpenAI settings
-openai_settings = OpenAISettings()
+gemini_settings = GeminiSettings()
 
 
-class AzureOpenAIEmbeddings(Embeddings):
+class GeminiEmbeddings(Embeddings):
     """
-    Azure OpenAI embeddings implementation that satisfies the LangChain Embeddings interface.
-    This class wraps the Azure OpenAI client and provides the embed_documents and embed_query methods
+    Gemini API embeddings implementation that satisfies the LangChain Embeddings interface.
+    This class wraps the Gemini API client and provides the embed_documents and embed_query methods
     required by LangChain's vectorstore implementations.
     """
     
-    def __init__(self, azure_deployment: str = None):
+    def __init__(self, model_name: str = None):
         """
-        Initialize the Azure OpenAI embeddings class.
+        Initialize the Gemini embeddings class.
         The client will be lazily initialized when needed.
         
         Args:
-            azure_deployment: Optional deployment name to override the default
+            model_name: Optional model name to override the default
         """
         self.client = None
-        self.model = azure_deployment or openai_settings.EMBEDDING_MODEL
-        logger.info(f"Initialized AzureOpenAIEmbeddings with model: {self.model}")
+        self.model = model_name or gemini_settings.EMBEDDING_MODEL
+        logger.info(f"Initialized GeminiEmbeddings with model: {self.model}")
     
     def _ensure_client(self):
         """
-        Ensure the Azure OpenAI client is initialized.
+        Ensure the Gemini client is initialized.
         """
         if self.client is None:
-            logger.info("Initializing Azure OpenAI client for embeddings")
-            self.client = get_openai_client()
-            logger.info("Azure OpenAI client initialized successfully")
+            logger.info("Initializing Gemini client for embeddings")
+            self.client = get_client()
+            logger.info("Gemini client initialized successfully")
     
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
         """
@@ -110,9 +110,10 @@ class KnowledgeService:
     def __init__(self):
         """Initialize knowledge service with vector store"""
         # DIRECT HARDCODED PATH - Using the confirmed location of the vector store
-        self.vector_store_path = "/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data/vector_store"
+        #self.vector_store_path = "/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data/vector_store"
+        self.vector_store_path = "../rfp-data/vector_store"
         
-        self.embeddings = AzureOpenAIEmbeddings()
+        self.embeddings = GeminiEmbeddings()
         self.vector_store = None
         self.initialized = False
         logger.info(f"Using hardcoded vector store path: {self.vector_store_path}")

@@ -1,8 +1,7 @@
 # Import prerequisite libraries
 import os
 import numpy as np
-from azure.identity import ClientSecretCredential
-from openai import AzureOpenAI
+from openai import OpenAI
 import PyPDF2
 import docx
 import time
@@ -12,58 +11,23 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-class OpenAISettings:
-    """Settings for OpenAI model connections via Azure."""
+class GeminiSettings:
+    """Settings for Gemini model connections."""
     
-    API_TYPE: str = os.getenv("API_TYPE", "azure_ad")
-    API_BASE: str = os.getenv("API_BASE", "")
-    API_VERSION: str = os.getenv("API_VERSION", "2024-08-01-preview")
-    MODEL_NAME: str = os.getenv("MODEL_NAME", "gpt4o")
-    EMBEDDING_MODEL: str = os.getenv("EMBEDDING_MODEL", "embeddings")
-    TENANT_ID: str = os.getenv("TENANT_ID", "")
-    ACCOUNT_NAME: str = os.getenv("ACCOUNT_NAME", "")
-    SERVICE_PRINCIPAL_ID: str = os.getenv("SERVICE_PRINCIPAL_ID", "")
-    SERVICE_PRINCIPAL_SECRET: str = os.getenv("SERVICE_PRINCIPAL_SECRET", "")
-    AUTH_SCOPE: str = os.getenv("AUTH_SCOPE", "")
+    API_KEY: str = os.getenv("GEMINI_API_KEY", "").rstrip('%')
+    BASE_URL: str = "https://generativelanguage.googleapis.com/v1beta/"
+    MODEL_NAME: str = "gemini-2.0-flash-lite-001"
+    EMBEDDING_MODEL: str = "models/embedding-001"
     MAX_RETRIES: int = 3
     SLEEP_TIME: int = 30
 
-openai_settings = OpenAISettings()
+gemini_settings = GeminiSettings()
 
-def generate_token(tenant_id: str, service_principal_id: str, 
-                  service_principal_secret: str, scope: str) -> str:
-    """Generate authentication token for Azure API access."""
-    credentials = ClientSecretCredential(
-        tenant_id, 
-        service_principal_id, 
-        service_principal_secret
-    )
-    token = credentials.get_token(scope)
-    return token.token
-
-def get_openai_token() -> str:
-    """Generate authentication token for OpenAI API access."""
-    return generate_token(
-        openai_settings.TENANT_ID.strip(),
-        openai_settings.SERVICE_PRINCIPAL_ID.strip(),
-        openai_settings.SERVICE_PRINCIPAL_SECRET.strip(),
-        openai_settings.AUTH_SCOPE
-    )
-
-def get_client(api_key: str, endpoint: str, api_version: str) -> AzureOpenAI:
-    """Get Azure OpenAI client with proper authentication."""
-    return AzureOpenAI(
-        api_key=api_key,
-        azure_endpoint=endpoint,
-        api_version=api_version
-    )
-
-def get_openai_client() -> AzureOpenAI:
-    """Get an authenticated OpenAI client."""
-    return get_client(
-        api_key=get_openai_token(),
-        endpoint=openai_settings.API_BASE,
-        api_version=openai_settings.API_VERSION
+def get_client() -> OpenAI:
+    """Get Gemini client with API key."""
+    return OpenAI(
+        api_key=gemini_settings.API_KEY,
+        base_url=gemini_settings.BASE_URL
     )
 
 def extract_text_from_pdf(file_path: str) -> str:
@@ -101,23 +65,23 @@ def get_file_text(file_path: str) -> str:
         print(f"Unsupported file format: {file_path}")
         return ""
 
-def get_embedding(client: AzureOpenAI, text: str) -> List[float]:
-    """Get embedding for a text using the OpenAI model."""
+def get_embedding(client: OpenAI, text: str) -> List[float]:
+    """Get embedding for a text using the Gemini model."""
     try:
         # Truncate text if too long (adjust max_length as needed)
-        max_length = 8000
-        if len(text) > max_length:
-            text = text[:max_length]
+        # max_length = 8000
+        # if len(text) > max_length:
+        #     text = text[:max_length]
             
         response = client.embeddings.create(
             input=text,
-            model=openai_settings.EMBEDDING_MODEL
+            model=gemini_settings.EMBEDDING_MODEL
         )
         return response.data[0].embedding
     except Exception as e:
         print(f"Error getting embedding: {str(e)}")
         # Return a zero vector as fallback
-        return [0.0] * 1536  # Assuming embedding dimension is 1536
+        return [0.0] * 768  # Assuming embedding dimension is 768 for Gemini
 
 def cosine_similarity(a: List[float], b: List[float]) -> float:
     """Calculate cosine similarity between two vectors."""
@@ -131,9 +95,9 @@ def main():
     requirements_dir = os.getenv('REQUIREMENTS_DIR', './Requirements(Input)')
     responses_dir = os.getenv('RESPONSES_DIR', './Responses')
     
-    # Initialize OpenAI client
-    print("Initializing OpenAI client...")
-    client = get_openai_client()
+    # Initialize Gemini client
+    print("Initializing Gemini client...")
+    client = get_client()
     
     # Get all files in the directories
     requirements_files = [f for f in os.listdir(requirements_dir) 

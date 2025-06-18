@@ -13,14 +13,14 @@ dynamic_question:
     If the knowledge base doesn't contain sufficient information, be transparent about this while still providing a strategic framework for a response based on general industry knowledge.
 
   user: |
-  I need to respond to a custom question for the "{section_name}" section of an RFP.
-  
-  QUESTION: {question_text}
-  
-  SECTION CONTEXT: 
-  {section_description}
-  
-  RELEVANT INFORMATION FROM OUR KNOWLEDGE BASE:
-  {knowledge_context}
-  
-  Please provide a strategic, differentiated response that highlights our competitive advantages.
+    I need to respond to a custom question for the "{section_name}" section of an RFP.
+    
+    QUESTION: {question_text}
+    
+    SECTION CONTEXT: 
+    {section_description}
+    
+    RELEVANT INFORMATION FROM OUR KNOWLEDGE BASE:
+    {knowledge_context}
+    
+    Please provide a strategic, differentiated response that highlights our competitive advantages.

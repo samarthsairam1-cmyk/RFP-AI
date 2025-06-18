@@ -7,19 +7,19 @@ from typing import List, Dict, Any, Optional
 
 # Add parent directory to path to import from semantic_similarity
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-from semantic_similarity import get_openai_client, OpenAISettings
+from semantic_similarity import get_client, GeminiSettings
 from utils.prompt_loader import prompt_loader
 from utils.token_utils import count_tokens, split_text_into_chunks, summarize_chunks
 
 
 logger = logging.getLogger(__name__)
 
-# Initialize OpenAI settings
-openai_settings = OpenAISettings()
+# Initialize Gemini settings
+gemini_settings = GeminiSettings()
 
 def extract_questions_llm(text: str, document_title: str = "RFP Document") -> List[Dict[str, Any]]:
     """
-    Extract questions from an RFP document using Azure OpenAI.
+    Extract questions from an RFP document using Google's Gemini API.
     First generates a response guide, then uses that to inform the question extraction process.
     
     Args:
@@ -49,9 +49,9 @@ def extract_questions_llm(text: str, document_title: str = "RFP Document") -> Li
         except Exception as e:
             logger.error(f"Error loading questions from cache: {str(e)}")
     
-    # Initialize OpenAI client
-    client = get_openai_client()
-    logger.info("Initialized Azure OpenAI client for question extraction")
+    # Initialize Gemini client
+    client = get_client()
+    logger.info("Initialized Gemini client for question extraction")
     
     # Count tokens in the document
     token_count = count_tokens(text)
@@ -148,7 +148,7 @@ def extract_questions_llm(text: str, document_title: str = "RFP Document") -> Li
             
             try:
                 response = client.chat.completions.create(
-                    model=openai_settings.MODEL_NAME,
+                    model=gemini_settings.MODEL_NAME,
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": user_prompt}
@@ -197,7 +197,7 @@ def extract_questions_llm(text: str, document_title: str = "RFP Document") -> Li
         
         try:
             response = client.chat.completions.create(
-                model=openai_settings.MODEL_NAME,
+                model=gemini_settings.MODEL_NAME,
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
@@ -271,7 +271,7 @@ def extract_questions_llm(text: str, document_title: str = "RFP Document") -> Li
 
 def extract_metadata_llm(text: str, document_title: str = "RFP Document") -> Dict[str, Any]:
     """
-    Extract metadata from an RFP document using Azure OpenAI.
+    Extract metadata from an RFP document using Google's Gemini API.
     
     Args:
         text: The document text to analyze
@@ -301,7 +301,7 @@ def extract_metadata_llm(text: str, document_title: str = "RFP Document") -> Dic
             logger.error(f"Error loading metadata from cache: {str(e)}")
     
     # Initialize OpenAI client
-    client = get_openai_client()
+    client = get_client()
     logger.info("Initialized Azure OpenAI client for metadata extraction")
     
     # Count tokens in the document
@@ -338,7 +338,7 @@ def extract_metadata_llm(text: str, document_title: str = "RFP Document") -> Dic
     # Extract metadata
     try:
         response = client.chat.completions.create(
-            model=openai_settings.MODEL_NAME,
+            model=gemini_settings.MODEL_NAME,
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
@@ -381,7 +381,7 @@ def extract_metadata_llm(text: str, document_title: str = "RFP Document") -> Dic
 
 def create_response_guide_llm(text: str, document_title: str = "RFP Document") -> Dict[str, Any]:
     """
-    Create a response guide for an RFP document using Azure OpenAI.
+    Create a response guide for an RFP document using Google's Gemini API.
     
     Args:
         text: The document text to analyze
@@ -410,9 +410,9 @@ def create_response_guide_llm(text: str, document_title: str = "RFP Document") -
         except Exception as e:
             logger.error(f"Error loading response guide from cache: {str(e)}")
     
-    # Initialize OpenAI client
-    client = get_openai_client()
-    logger.info("Initialized Azure OpenAI client for response guide creation")
+    # Initialize Gemini client
+    client = get_client()
+    logger.info("Initialized Gemini client for response guide creation")
     
     # Count tokens in the document
     token_count = count_tokens(text)
@@ -448,7 +448,7 @@ def create_response_guide_llm(text: str, document_title: str = "RFP Document") -
     # Create response guide
     try:
         response = client.chat.completions.create(
-            model=openai_settings.MODEL_NAME,
+            model=gemini_settings.MODEL_NAME,
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}

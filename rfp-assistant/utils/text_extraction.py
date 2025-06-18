@@ -14,15 +14,15 @@ from langchain.docstore.document import Document
 
 # Add parent directory to path to import from semantic_similarity
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-from semantic_similarity import get_openai_client, OpenAISettings
+from semantic_similarity import get_client, GeminiSettings
 from utils.prompt_loader import prompt_loader
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Initialize OpenAI settings
-openai_settings = OpenAISettings()
+# Initialize Gemini settings
+gemini_settings = GeminiSettings()
 
 def extract_text_from_pdf(file_path: str) -> str:
     """

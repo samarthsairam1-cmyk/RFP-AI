@@ -23,6 +23,12 @@ from typing import List, Dict, Any, Optional, Set, Tuple
 import glob
 from pathlib import Path
 import hashlib
+from dotenv import load_dotenv
+from openai import OpenAI
+
+
+load_dotenv()
+
 
 # Add parent directory to path for imports
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -44,8 +50,8 @@ from langchain.embeddings.base import Embeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.docstore.document import Document
 
-# Import custom OpenAI settings and client
-from semantic_similarity import OpenAISettings, get_openai_client, get_embedding
+# Import custom Gemini settings and client
+from semantic_similarity import GeminiSettings, get_client, get_embedding
 
 # Setup logging
 logging.basicConfig(
@@ -58,8 +64,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Initialize OpenAI settings
-openai_settings = OpenAISettings()
+# Initialize Gemini settings
+gemini_settings = GeminiSettings()
 
 class CustomAzureEmbeddings(Embeddings):
     """
@@ -68,18 +74,29 @@ class CustomAzureEmbeddings(Embeddings):
     """
     
     def __init__(self):
-        """Initialize with Azure OpenAI client"""
+        """Initialize with Gemini client"""
         self.client = None
-        self.model = openai_settings.EMBEDDING_MODEL
-        logger.info(f"Initialized CustomAzureEmbeddings with model: {self.model}")
+        self.model = gemini_settings.EMBEDDING_MODEL
+        logger.info(f"Initialized CustomEmbeddings with model: {self.model}")
     
     def _ensure_client(self):
         """Ensure the client is initialized"""
         if self.client is None:
-            logger.info("Initializing Azure OpenAI client")
-            self.client = get_openai_client()
-            logger.info("Azure OpenAI client initialized successfully")
-    
+            logger.info("Initializing Gemini client")
+            
+            # Get API key directly from environment instead of settings
+            api_key = os.getenv("GEMINI_API_KEY", "").rstrip('%')
+            masked_key = f"{api_key[:5]}...{api_key[-3:]}" if len(api_key) > 8 else "[EMPTY]"
+            logger.info(f"API key loaded directly from env: {masked_key}")
+            
+            # Create client with direct API key
+            self.client = OpenAI(
+                api_key=api_key,
+                base_url=gemini_settings.BASE_URL
+            )
+        
+        logger.info("Gemini client initialized successfully")
+        
     def embed_documents(self, texts: List[str]) -> List[List[float]]:
         """Generate embeddings for a list of documents"""
         self._ensure_client()

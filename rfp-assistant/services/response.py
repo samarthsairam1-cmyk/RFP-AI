@@ -11,10 +11,12 @@ import time
 from dotenv import load_dotenv
 from services.knowledge import knowledge_service
 from utils.prompt_loader import prompt_loader
+from fastapi.encoders import jsonable_encoder
+from fastapi.responses import JSONResponse
 
 # Add parent directory to path to import from semantic_similarity
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-from semantic_similarity import get_openai_client, OpenAISettings
+from semantic_similarity import get_client, GeminiSettings
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -23,13 +25,13 @@ logger = logging.getLogger(__name__)
 # Load environment variables
 load_dotenv()
 
-# Initialize OpenAI settings
-openai_settings = OpenAISettings()
+# Initialize Gemini settings
+gemini_settings = GeminiSettings()
 
 class ResponseService:
     def __init__(self):
         """Initialize response service"""
-        self.model = os.getenv("RESPONSE_MODEL", openai_settings.MODEL_NAME)
+        self.model = os.getenv("RESPONSE_MODEL", gemini_settings.MODEL_NAME)
         self.client = None
         self.max_retries = 3
         self.retry_delay = 2  # seconds
@@ -67,9 +69,9 @@ class ResponseService:
         try:
             # Initialize client if not already done
             if self.client is None:
-                logger.info("Initializing Azure OpenAI client for response generation")
-                self.client = get_openai_client()
-                logger.info("Azure OpenAI client initialized successfully")
+                logger.info("Initializing Gemini client for response generation")
+                self.client = get_client()
+                logger.info("Gemini client initialized successfully")
             
             # If no knowledge provided, retrieve it
             if knowledge is None:
@@ -109,8 +111,8 @@ class ResponseService:
                 system_prompt = prompt_data.get("system", "You are an expert RFP response writer.")
                 user_prompt = prompt_data.get("user", "")
             
-            # Generate response using Azure OpenAI with retries
-            logger.info(f"Generating response using Azure OpenAI model {self.model}")
+            # Generate response using Gemini with retries
+            logger.info(f"Generating response using Gemini model {self.model}")
             response_text = None
             retries = 0
             
@@ -204,7 +206,7 @@ class ResponseService:
             # Initialize client if not already done
             if self.client is None:
                 logger.info("Initializing Azure OpenAI client for response generation")
-                self.client = get_openai_client()
+                self.client = get_client()
                 logger.info("Azure OpenAI client initialized successfully")
             
             # If no knowledge provided, retrieve it
@@ -300,6 +302,7 @@ Your response should be professional, detailed, and directly address the questio
             self.response_cache[cache_key] = response_obj
             
             return response_obj
+            #return JSONResponse(content=jsonable_encoder(response.to_dict()))
         except Exception as e:
             logger.error(f"Error generating response for question {question_id}: {str(e)}")
             # Return a fallback response instead of crashing
@@ -337,7 +340,7 @@ Your response should be professional, detailed, and directly address the questio
             # Initialize client if not already done
             if self.client is None:
                 logger.info("Initializing Azure OpenAI client for chat response generation")
-                self.client = get_openai_client()
+                self.client = get_client()
                 logger.info("Azure OpenAI client initialized successfully")
             
             # If no knowledge provided, retrieve it
@@ -395,6 +398,11 @@ Your response should be professional, detailed, and directly address the questio
                         max_tokens=1500
                     )
                     
+                    logger.info('-' * 40)
+                    logger.info(type( response.choices[0].message.content))
+                    logger.info(response.choices[0].message.content)
+                    logger.info('-' * 40)
+                    
                     # Extract response text
                     response_text = response.choices[0].message.content
                     logger.info(f"Successfully generated chat response for query: '{truncated_query}'")
@@ -418,19 +426,21 @@ Your response should be professional, detailed, and directly address the questio
                 "system_prompt": system_prompt,
                 "user_prompt": user_prompt,
                 "knowledge_context": knowledge_context,
-                "sources": [{
-                    "text": k["text"],
-                    "metadata": k.get("metadata", {}),
-                    "source": k.get("source", "Unknown"),
-                    "score": k.get("score", 0.0)
-                } for k in knowledge]
+                "sources":None
+                # "sources": [{
+                #     "text": k["text"],
+                #     "metadata": k.get("metadata", {}),
+                #     "source": k.get("source", "Unknown"),
+                #     "score": k.get("score", 0.0)
+                # } for k in knowledge]
             }
             
             # Cache response
             logger.info(f"Caching chat response for query: '{truncated_query}'")
             self.response_cache[cache_key] = response_obj
-            
+            logger.info( response_obj)
             return response_obj
+            
         except Exception as e:
             logger.error(f"Error generating chat response: {str(e)}")
             # Return a fallback response instead of crashing
@@ -483,7 +493,7 @@ Your response should be professional, detailed, and directly address the questio
         """
         if not self.client:
             logger.info("Initializing Azure OpenAI client")
-            self.client = get_openai_client()
+            self.client = get_client()
             
         retries = 0
         while retries < self.max_retries:
@@ -665,7 +675,7 @@ Your response should be professional, detailed, and directly address the questio
         if self.client is None:
             try:
                 logger.info("Initializing OpenAI client")
-                self.client = get_openai_client()
+                self.client = get_client()
                 logger.info("OpenAI client initialized successfully")
             except Exception as e:
                 logger.error(f"Failed to initialize OpenAI client: {str(e)}")
