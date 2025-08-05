@@ -477,8 +477,11 @@ class KnowledgeEmbedder:
 def main():
     """Main function to run the embedder."""
     # Get source and output directories from command line arguments or use defaults
-    source_dir = sys.argv[1] if len(sys.argv) > 1 else "/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses"
-    output_dir = sys.argv[2] if len(sys.argv) > 2 else "/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data"
+    #source_dir = sys.argv[1] if len(sys.argv) > 1 else "/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/Responses"
+    #output_dir = sys.argv[2] if len(sys.argv) > 2 else "/Users/u1112870/Library/CloudStorage/OneDrive-IQVIA/Ananth/Personal/Arokia_sir/rfp-data"
+    source_dir = sys.argv[1]
+    output_dir  = sys.argv[2]
+    
     
     # Log the paths to ensure they're correct
     logger.info(f"Using source directory: {source_dir}")
