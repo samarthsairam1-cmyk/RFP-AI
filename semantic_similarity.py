@@ -12,7 +12,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 print("Hello")
-
 class GeminiSettings:
     """Settings for Gemini model connections."""
     
